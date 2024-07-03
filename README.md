@@ -38,9 +38,22 @@
 
 ### 1. 注册你的`Github`账号，并将本项目fork到自己的账号下
 
+![fork本项目](./docs/images/fork.jpg)
+
 ### 2. 注册一个[`Vercel账号`](https://vercel.com/)，绑定步骤1的`Github`账号，并授权访问fork的本项目
 
-### 3. 在`Vercel`控制台创建一个新项目，导入步骤3的项目，并设置以下的环境变量:
+### 3. 在`Vercel`控制台创建一个新项目，导入步骤3的项目:
+
+在Vercel上创建项目
+![vercel创建项目](./docs/images/vercel-add-project.jpg)
+
+添加项目访问权限
+![vercel添加项目访问权限](./docs/images/vercel-add-permission.jpg)
+
+导入要部署的项目
+![vercel导入项目](./docs/images/vercel-project-import.jpg)
+
+开始部署项目，并设置以下的环境变量
 
 ```
 `NUXT_IDATARIVER_MERCHANT_SECRET`
@@ -58,17 +71,35 @@
 可选参数，用于自定义API层面的加密签名，从而获得更好的安全保护，可以自行设置其值。
 ```
 
+![vercel部署项目](./docs/images/vercel-deploy.jpg)
+
 以上几个环境变量设置好之后，点击`Deploy`进行部署，等待一分钟左右你的商户独立站就能部署成功。
 
-### 4. 绑定域名
+![vercel项目部署成功](./docs/images/vercel-deploy-ok.jpg)
 
-部署成功后，点击部署好的项目右上角有一个`Domain`(域名)入口，配置好3中设定的域名，按照指定操作即可。
+### 4. 绑定域名
 
 如果3中没有配置域名，则可以跳过此步骤，这时你可以使用`Vercel`为你提供的域名进行访问。
 
 强烈建议绑定自己的域名，因为每次重新部署后自动分配的Vercel域名都可能会变化。
 
-如果使用`CloudFlare`免费托管域名，在配置好DNS解析记录后(代理模式)，需要将域名的`SSL/TLS`设置为`完全`端到端加密。
+部署成功后，点击部署好的项目右上角有一个`Domain`(域名)入口，配置好3中设定的域名，按照指定操作即可。
+
+![vercel进入域名配置](./docs/images/vercel-domain-enter.jpg)
+
+在Vercel对部署好的网站进行域名绑定
+
+![vercel绑定域名](./docs/images/vercel-domain-add.jpg)
+
+如果使用[`CloudFlare`](https://www.cloudflare.com/)免费托管域名，则需要如下配置:
+
+添加Vercel要求的DNS解析记录后(代理模式)
+
+![cloudflare添加dns解析](./docs/images/cf-dns.jpg)
+
+将域名的`SSL/TLS`设置为`完全`端到端加密
+
+![cloudflare设置为完全端到端加密](./docs/images/cf-ssl.jpg)
 
 ### 5. 最后
 
