@@ -86,7 +86,7 @@ onMounted(() => {
 <template>
   <NuxtLayout name="simplified">
     <section class="flex justify-center">
-      <div v-if="isNotEmptyObj(merchant)" class="w-full max-w-screen-xl space-y-4 px-2">
+      <div v-if="isNotEmptyObj(merchant)" class="w-full max-w-screen-xl space-y-4 px-2 my-2">
 
         <div v-if="isNotEmptyObj(basicInfo)" class="mt-4 flex items-center">
           <div>
@@ -95,7 +95,7 @@ onMounted(() => {
 
           <div class="flex-grow" />
 
-          <div class="flex items-center space-x-2">
+          <div class="flex items-center gap-x-2">
             <div v-if="!isNotEmptyObj(selectedSKU)" class="max-w-md mx-auto">
               <div class="relative">
                 <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">

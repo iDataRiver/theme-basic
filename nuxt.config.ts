@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   runtimeConfig: {
-    idatariverHost: 'https://api.idatariver.com',
+    idatariverHost: 'https://open.idatariver.com',
     idatariverMerchantSecret: '',
     public: {
       baseUrl: '',
