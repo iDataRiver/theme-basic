@@ -37,7 +37,7 @@ const wrapMapi = async (event) => {
     // custom mapi cache rule
     if (['/api/merchant/basicInfo', '/api/merchant/info'].includes(purePath)) {
       event.idatariverReq.cacheKey = purePath // without query params
-    } else if (['/api/order/info', '/api/order/search'].includes(purePath)) {
+    } else if (['/api/order/search'].includes(purePath)) {
       event.idatariverReq.cacheKey = event.path // with query params
     }
   }

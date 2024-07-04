@@ -2,6 +2,7 @@
 const order = useDataOrder()
 
 onMounted(() => {
+  order.value = {}
   const orderId = useRoute().path.split('/').pop()
   stateOrder.refresh(orderId)
 });

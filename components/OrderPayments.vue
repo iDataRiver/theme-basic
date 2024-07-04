@@ -13,7 +13,9 @@ const { locale } = useI18n()
 
 const composeOrderUrl = (method, id) => {
   const path = '/api/order/pay'
-  const url = `${path}?method=${method}&id=${id}&redirect_url=${getBaseUrl()}${useRoute().fullPath}&base=${getBaseUrl()}&locale=${locale.value}`
+  const redirectUrl = encodeURIComponent(`${getBaseUrl()}${useRoute().fullPath}`)
+  const base = encodeURIComponent(getBaseUrl())
+  const url = `${path}?method=${method}&id=${id}&redirectUrl=${redirectUrl}&base=${base}&locale=${locale.value}&json=1`
   return `${url}&_sign=${encryptReq(path)}`
 }
 </script>

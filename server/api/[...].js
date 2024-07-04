@@ -49,5 +49,13 @@ export default defineEventHandler(async (event) => {
   if (event.idatariverReq.cacheKey) {
     return await cachedMapi(event, event.idatariverReq.cacheKey)
   }
-  return await $fetch(event.idatariverReq.url, event.idatariverReq.requestOptions).catch((error) => console.log(error.data))
+
+  const result = await $fetch(event.idatariverReq.url, event.idatariverReq.requestOptions).catch((error) => console.log(error.data))
+
+  // mapi redirect json response
+  if (result.redirectUrl) {
+    return await sendRedirect(event, result.redirectUrl)
+  }
+
+  return result
 })
