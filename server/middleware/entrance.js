@@ -30,7 +30,7 @@ const wrapMapi = async (event) => {
     }
 
     event.idatariverReq = {
-      url: `${config.idatariverHost}${event.path}`.replace('/api/', '/mapi/').replace('//', '/'),
+      url: `${config.public.idatariverHost}${event.path}`.replace('/api/', '/mapi/').replace('//', '/'),
       requestOptions: requestOptions,
     }
 

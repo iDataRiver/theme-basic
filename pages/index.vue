@@ -36,7 +36,6 @@ const filterSkus = (projects, keyword = '') => {
 
       sku.projectSlug = project.slug
       sku.cover = project.cover
-      if (sku.cover.startsWith('/')) { sku.cover = `https://www.idatariver.com${sku.cover}` }
       sku.project = {
         id: project.id,
         name: project.name,

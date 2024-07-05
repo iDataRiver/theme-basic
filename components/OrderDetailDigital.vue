@@ -132,7 +132,8 @@ const isHiicashEnabled = () => {
           <div class="mt-2 space-y-1">
             <p v-if="isHiicashEnabled()" class="text-ms font-medium">
               * {{ $t('hiicash_vendor_tip') }}
-              <a target="_blank" href="https://user.idatariver.com/txn/hiicash/vendor" class="text-blue-500 font-bold">
+              <a target="_blank" :href="`${useRuntimeConfig().public.idatariverHost}/txn/hiicash/vendor`"
+                class="text-blue-500 font-bold">
                 👉 [link]
               </a>
             </p>

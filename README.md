@@ -1,8 +1,16 @@
-# Theme-Basic
+<div align="center">
+
+<h1 align="center">iDataRiver Theme(Basic)</h1>
 
 本项目是由[`iDataRiver平台`](https://www.idatariver.com/zh-cn)开源的`数字商品`独立站主题模板。
 
 网站的项目/商品管理请前往[`iDataRiver平台`](https://www.idatariver.com/zh-cn)的`控制台`->`项目管理`进行操作。
+
+[演示 Demo](https://uselesss.org/) / [反馈 Issues](https://github.com/iDataRiver/theme-basic/issues)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FiDataRiver%2Ftheme-basic&env=NUXT_IDATARIVER_MERCHANT_SECRET&env=NUXT_PUBLIC_BASE_URL&project-name=idatariver-theme-basic&repository-name=theme-basic)
+
+</div>
 
 ## 模板特点
 
@@ -42,7 +50,7 @@
 
 ### 2. 注册一个[`Vercel账号`](https://vercel.com/)，绑定步骤1的`Github`账号，并授权访问fork的本项目
 
-### 3. 在`Vercel`控制台创建一个新项目，导入步骤3的项目:
+### 3. 在`Vercel`控制台创建一个新项目，导入步骤2的项目:
 
 在Vercel上创建项目
 ![vercel创建项目](./docs/images/vercel-add-project.jpg)
@@ -53,23 +61,17 @@
 导入要部署的项目
 ![vercel导入项目](./docs/images/vercel-project-import.jpg)
 
-开始部署项目，并设置以下的环境变量
+开始部署项目，并设置以下的环境变量:
 
-```
-`NUXT_IDATARIVER_MERCHANT_SECRET`
-
+#### `NUXT_IDATARIVER_MERCHANT_SECRET`
 设置为你自己的商户开发者密钥，可在[`iDataRiver平台`](https://www.idatariver.com/zh-cn)控制台的商户设置里获取。
-
 这个参数用来标识你的商户账号，所以必须填写。
 
-`NUXT_PUBLIC_BASE_URL` 
-
+#### `NUXT_PUBLIC_BASE_URL`
 大部分情况下你需要使用自己的域名访问网站，这个值填写你自己的域名地址，格式如下: `https://www.idatariver.com`
 
-`NUXT_PUBLIC_API_ENCRYPT_KEY`
-
+#### `NUXT_PUBLIC_API_ENCRYPT_KEY`
 可选参数，用于自定义API层面的加密签名，从而获得更好的安全保护，可以自行设置其值。
-```
 
 ![vercel部署项目](./docs/images/vercel-deploy.jpg)
 
