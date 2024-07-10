@@ -4,7 +4,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     idatariverMerchantSecret: '',
     public: {
-      idatariverHost: 'https://open.idatariver.com',
+      idatariver: 'https://www.idatariver.com',
+      idatariverServer: 'https://open.idatariver.com',
       baseUrl: '',
       apiEncryptKey: 'Powered By iDataRiver.com',
     }

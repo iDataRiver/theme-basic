@@ -28,7 +28,7 @@ const clear = () => {
         <div class="border-t"></div>
 
         <div class="space-y-2">
-          <div class="text-md font-bold text-gray-500">{{ $t('商品介绍') }}</div>
+          <div class="text-md font-bold text-gray-500">{{ $t('sku_desc') }}</div>
           <div class="text-sm text-gray-600">{{ descI18n(locale, sku) }}</div>
 
           <div v-if="!sku.docLink" class="text-xs">
@@ -38,7 +38,7 @@ const clear = () => {
         </div>
 
         <div class="space-y-2">
-          <div class="text-md font-bold text-gray-500">{{ $t('项目介绍') }}</div>
+          <div class="text-md font-bold text-gray-500">{{ $t('project_desc') }}</div>
           <div class="text-sm text-gray-600">{{ descI18n(locale, sku.project) }}</div>
         </div>
       </div>

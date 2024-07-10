@@ -39,6 +39,27 @@ const isValidSign = (event) => {
   }
 }
 
+const dealPayOrder = async (event, res) => {
+  const code = res.code
+  const locale = getQuery(event).locale
+  const redirectUrl = getQuery(event).redirectUrl
+  const config = useRuntimeConfig()
+
+  if (code == 0) {
+    if (res.result && res.result.payUrl) {
+      let payUrl = res.result.payUrl
+      if (payUrl.startsWith('/')) {// Dawn
+        payUrl = locale && locale != 'en' ? `${config.public.idatariver}/${locale}${payUrl}` : `${config.public.idatariver}${payUrl}`
+      }
+      return await sendRedirect(event, payUrl)
+    }
+    return await sendRedirect(event, redirectUrl)
+  }
+
+  const i18nMsg = res.msg.startsWith('i18n:') ? res.msg.split('i18n:')[1] : 'server_internal_exception'
+  const tipUrl = locale == 'en' ? `/tip?code=${code}&i18n=${i18nMsg}` : `/${locale}/tip?code=${code}&i18n=${i18nMsg}`
+  return await sendRedirect(event, tipUrl)
+}
 
 export default defineEventHandler(async (event) => {
   // check sign
@@ -52,9 +73,9 @@ export default defineEventHandler(async (event) => {
 
   const result = await $fetch(event.idatariverReq.url, event.idatariverReq.requestOptions).catch((error) => console.log(error.data))
 
-  // mapi redirect json response
-  if (result.redirectUrl) {
-    return await sendRedirect(event, result.redirectUrl)
+  // pay order api
+  if (event.idatariverReq.url.includes('/mapi/order/pay')) {
+    return dealPayOrder(event, result)
   }
 
   return result

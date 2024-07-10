@@ -29,8 +29,15 @@ const wrapMapi = async (event) => {
       requestOptions.body = JSON.stringify(body)
     }
 
+    // use post method for pay
+    if (purePath == '/api/order/pay') {
+      requestOptions.method = 'POST'
+      requestOptions.headers['content-type'] = 'application/json'
+      requestOptions.body = JSON.stringify(getQuery(event))
+    }
+
     event.idatariverReq = {
-      url: `${config.public.idatariverHost}${event.path}`.replace('/api/', '/mapi/').replace('//', '/'),
+      url: `${config.public.idatariverServer}${event.path}`.replace('/api/', '/mapi/').replace('//', '/'),
       requestOptions: requestOptions,
     }
 
