@@ -6,7 +6,7 @@
 
 网站的项目/商品管理请前往[`iDataRiver平台`](https://www.idatariver.com/zh-cn)的`控制台`->`项目管理`进行操作。
 
-[演示 Demo](https://uselesss.org/) / [反馈 Issues](https://github.com/iDataRiver/theme-basic/issues)
+[商户入驻指南](https://docs.idatariver.com/zh/guide/04.01.merchant.html) / [演示 Demo](https://uselesss.org/) / [反馈 Issues](https://github.com/iDataRiver/theme-basic/issues)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FiDataRiver%2Ftheme-basic&env=NUXT_IDATARIVER_MERCHANT_SECRET&env=NUXT_PUBLIC_BASE_URL&project-name=idatariver-theme-basic&repository-name=theme-basic)
 

@@ -33,6 +33,7 @@ const wrapMapi = async (event) => {
     if (purePath == '/api/order/pay') {
       requestOptions.method = 'POST'
       requestOptions.headers['content-type'] = 'application/json'
+      requestOptions.headers['x-idr-locale'] = getQuery(event).locale
       requestOptions.body = JSON.stringify(getQuery(event))
     }
 
