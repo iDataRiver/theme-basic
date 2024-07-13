@@ -12,6 +12,15 @@
 
 </div>
 
+## 项目交流
+
+如果看完文档依旧不会搭建的，平台提供免费代搭建服务，你只需要准备一个域名即可。
+
+* telegram: @jerseyer
+* telegram商户群: https://t.me/idatariver_merchant
+* 邮箱: support@idatariver.com
+* 官网客服 https://www.idatariver.com/
+
 ## 模板特点
 
 ### 一键部署独立站, 零成本搭建
