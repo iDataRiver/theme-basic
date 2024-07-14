@@ -79,6 +79,8 @@
 #### `NUXT_PUBLIC_BASE_URL`
 大部分情况下你需要使用自己的域名访问网站，这个值填写你自己的域名地址，格式如下: `https://www.idatariver.com`
 
+请注意: `https://` 前缀不能省掉。
+
 #### `NUXT_PUBLIC_API_ENCRYPT_KEY`
 可选参数，用于自定义API层面的加密签名，从而获得更好的安全保护，可以自行设置其值。
 

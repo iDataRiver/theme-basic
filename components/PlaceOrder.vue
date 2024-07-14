@@ -105,7 +105,7 @@ const clear = () => {
               <div class="flex items-center w-full">
                 <input v-model="sku.order.quantity" type="number" :id="'quantity-input-' + sku.id" data-input-counter
                   :data-input-counter-min="1" :data-input-counter-max="sku.order.maxQuantity"
-                  class="w-full px-3 py-1 text-sm border rounded-md border-gray-300 text-gray-800 focus:ring-gray-900 focus:border-0"
+                  class="w-full px-3 py-1 text-sm border rounded-sm border-gray-300 text-gray-800 focus:ring-gray-900 focus:border-0"
                   required />
               </div>
             </div>
@@ -114,14 +114,14 @@ const clear = () => {
               <label class="flex text-sm font-medium text-gray-700">{{ $t('Contact_Information') }}</label>
               <input v-model="sku.order.contactInfo" type="text" minlength="5"
                 :placeholder="$t('order_contact_info_placeholder')"
-                class="w-full px-3 py-1 text-sm border rounded-md border-gray-300 text-gray-800 focus:ring-gray-900 focus:border-0"
+                class="w-full px-3 py-1 text-sm border rounded-sm border-gray-300 text-gray-800 focus:ring-gray-900 focus:border-0"
                 required>
             </div>
 
             <div v-if="sku.project.hasCoupons" class="space-y-2">
               <label class="flex text-sm font-medium text-gray-700">{{ $t('Coupon') }}</label>
               <input v-model="sku.order.coupon" type="text" maxlength="50"
-                class="w-full px-3 py-1 text-sm border rounded-md border-gray-300 text-gray-800 focus:ring-gray-900 focus:border-0">
+                class="w-full px-3 py-1 text-sm border rounded-sm border-gray-300 text-gray-800 focus:ring-gray-900 focus:border-0">
             </div>
 
             <div class="mt-4">
