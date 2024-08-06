@@ -14,7 +14,7 @@ onMounted(() => {
   <dialog ref="merchantNotice" id="merchantNotice" class="modal">
     <div class="modal-box">
       <h3 class="text-lg font-bold">{{ $t('Notice') }}</h3>
-      <p class="py-4">{{ intro }}</p>
+      <p class="py-4 whitespace-pre-wrap leading-relaxed">{{ intro }}</p>
     </div>
     <form method="dialog" class="modal-backdrop">
       <button>close</button>
