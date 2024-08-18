@@ -28,7 +28,6 @@ const seoInit = (infoObj) => {
     useHead({
       title: title,
       meta: [
-        { 'name': 'revisit-after', 'content': '1 days' },
         { 'name': 'description', 'content': description },
         { 'itemprop': 'name', 'content': title },
         { 'itemprop': 'description', 'content': description },
@@ -48,7 +47,6 @@ const seoInit = (infoObj) => {
     })
 
     useSeoMeta({
-      robots: 'index, follow',
       ogType: 'website',
       ogSiteName: title,
       ogTitle: title,
