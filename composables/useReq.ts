@@ -5,10 +5,18 @@ const deal = async (url: string, requestOptions: any, isLoading: any) => {
 
   if (process.client) await nextTick()
 
-  const response: any = await useFetch(url, requestOptions).catch((error) => console.log(error.data))
-  const { data, refresh } = response
+  let response: any = {}
+
+  if (requestOptions.server) {
+    const res: any = await useFetch(url, requestOptions).catch((error) => console.log(error.data))
+    const { data } = res
+    response = data.value
+  } else {
+    response = await $fetch(url, requestOptions).catch((error) => console.log(error.data))
+  }
+
   isLoading.value = false
-  const { code, result, msg } = data.value;
+  const { code, result, msg } = response;
 
   if (process.client) {
     const alertError = useAlertError()
@@ -26,8 +34,8 @@ const deal = async (url: string, requestOptions: any, isLoading: any) => {
       }
     }
   }
-  const raw = data.value
-  return { code, result, msg, refresh, raw }
+  const raw = response
+  return { code, result, msg, raw }
 }
 
 const useReqGet = async (path: string, params: Object, server: boolean = false) => {

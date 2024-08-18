@@ -6,7 +6,6 @@ export default defineNuxtConfig({
     public: {
       idatariver: 'https://www.idatariver.com',
       idatariverServer: 'https://open.idatariver.com',
-      baseUrl: '',
       apiEncryptKey: 'Powered By iDataRiver.com',
     }
   },
@@ -28,7 +27,6 @@ export default defineNuxtConfig({
   },
   i18n: {
     vueI18n: './i18n.config.ts', // if you are using custom path, default 
-    // baseUrl: '/',
     locales: [
       { code: 'en', iso: 'en' },
       { code: 'es', iso: 'es' },  // 西班牙语

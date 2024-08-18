@@ -1,6 +1,6 @@
 // Basic
 export const getBaseUrl = () => {
-  return process.env.NODE_ENV === 'development' ? 'http://localhost:3001' : useRuntimeConfig().public.baseUrl
+  return process.env.NODE_ENV === 'development' ? 'http://localhost:3001' : useRequestURL().origin
 }
 
 export const useContactTypes = () => {
@@ -41,17 +41,26 @@ export const useDataMerchantBasic = () => {
 export const useDataMerchantInfo = () => {
   return useState('DataMerchantInfo', () => { return {} })
 }
+
 export const stateMerchant = {
-  async basic() {
-    const { code, result } = await useReqGet('/api/merchant/basicInfo', {})
-    if (code === 0) {
-      useDataMerchantBasic().value = JSON.parse(JSON.stringify(result))
+  async basic(server: boolean) {
+    const { code, result } = await useReqGet('/api/merchant/basicInfo', { server }, server)
+    if (server) {
+      return code === 0 ? result : {}
+    } else {
+      if (code === 0) {
+        useDataMerchantBasic().value = JSON.parse(JSON.stringify(result))
+      }
     }
   },
-  async info() {
-    const { code, result } = await useReqGet('/api/merchant/info', {})
-    if (code === 0) {
-      useDataMerchantInfo().value = JSON.parse(JSON.stringify(result))
+  async info(server: boolean) {
+    const { code, result } = await useReqGet('/api/merchant/info', { server }, server)
+    if (server) {
+      return code === 0 ? result : {}
+    } else {
+      if (code === 0) {
+        useDataMerchantInfo().value = JSON.parse(JSON.stringify(result))
+      }
     }
   },
 }
