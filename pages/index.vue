@@ -7,11 +7,13 @@ const seoInit = (infoObj) => {
   if (isNotEmptyObj(info)) {
     const url = useRequestURL().href
     const title = nameI18n(locale, info)
-    const description = descI18n(locale, info)
+    let description = descI18n(locale, info).replace(/[\r\n]/g, ' ')
     const logo = info.logo || 'https://docs.idatariver.com/logo.png'
 
     let itemListElement = []
     info.projects.forEach(project => {
+      description += '|' + nameI18n(locale, project)
+
       if (!project.skus) { return }
       project.skus.forEach(sku => {
         itemListElement.push({
