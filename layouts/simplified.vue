@@ -4,6 +4,7 @@ import { nameI18n } from '~/utils/i18n';
 const { locale } = useI18n()
 const localePath = useLocalePath()
 const basicInfo = await stateMerchant.basic(true)
+const scripts = basicInfo.website.script
 </script>
 
 <template>
@@ -45,6 +46,10 @@ const basicInfo = await stateMerchant.basic(true)
     </div>
 
     <Footer />
+
+    <template v-if="scripts">
+      <div v-html="scripts"></div>
+    </template>
   </NuxtLayout>
 </template>
 
