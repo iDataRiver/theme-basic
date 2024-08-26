@@ -6,8 +6,6 @@ const head = useLocaleHead({
   addSeoAttributes: true,
 })
 
-const t = useNuxtApp().$i18n.t;
-
 useHead({
   meta: [
     { 'name': 'revisit-after', 'content': '1 days' },

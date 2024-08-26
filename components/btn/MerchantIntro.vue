@@ -3,7 +3,9 @@ const props = defineProps(['intro'])
 const intro = props.intro
 
 onMounted(() => {
-  merchantNotice.showModal()
+  if (intro) {
+    merchantNotice.showModal()
+  }
 });
 </script>
 

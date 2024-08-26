@@ -14,7 +14,7 @@
 
 ## 项目交流
 
-如果看完文档依旧不会搭建的，平台提供免费代搭建服务，你只需要准备一个域名即可。
+如果看完文档依旧不会搭建的，可通过以下方式寻求帮助。
 
 * telegram: @jerseyer
 * telegram商户群: https://t.me/idatariver_merchant

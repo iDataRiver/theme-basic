@@ -1,0 +1,22 @@
+{
+  "headers": [
+    {
+      "source": "/(.*).(js|css|ttf|otf|woff2)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, s-maxage=3600"
+        }
+      ]
+    },
+    {
+      "source": "(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, s-maxage=5"
+        }
+      ]
+    }
+  ]
+}

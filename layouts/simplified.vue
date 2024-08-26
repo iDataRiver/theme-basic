@@ -3,11 +3,8 @@ import { nameI18n } from '~/utils/i18n';
 
 const { locale } = useI18n()
 const localePath = useLocalePath()
-const basicInfo = useDataMerchantBasic()
-
-onMounted(() => {
-  stateMerchant.basic();
-});
+const basicInfo = await stateMerchant.basic(true)
+const scripts = basicInfo.website.script
 </script>
 
 <template>
@@ -49,6 +46,10 @@ onMounted(() => {
     </div>
 
     <Footer />
+
+    <template v-if="scripts">
+      <div v-html="scripts"></div>
+    </template>
   </NuxtLayout>
 </template>
 
