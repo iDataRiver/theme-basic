@@ -13,7 +13,7 @@ const filterSkus = (projects, keyword = '') => {
   const showSkus = []
 
   projects.forEach((project) => {
-    if (project.type != 'DIGITAL') {
+    if (!['DIGITAL', 'GROUP'].includes(project.type)) {
       return
     }
 
@@ -84,7 +84,7 @@ onMounted(() => {
 
 <template>
   <section class="flex justify-center">
-    <div v-if="isNotEmptyObj(merchant)" class="w-full max-w-screen-xl space-y-4 px-2 my-2">
+    <div v-if="isNotEmptyObj(merchant)" class="w-full max-w-screen-xl space-y-4 px-4 my-2">
 
       <div class="mt-4 flex items-center">
         <div>
@@ -114,8 +114,8 @@ onMounted(() => {
 
       <div v-if="!isNotEmptyObj(selectedSKU)" id="skus" class="space-y-4">
         <div class="space-y-2">
-          <button v-for=" cate  in  cates " @click="changeCate(cate.code)"
-            class="mr-2 btn btn-xs btn-outline rounded-md" :class="{ 'btn-active': selectedCate.code == cate.code }">
+          <button v-for="cate in cates" @click="changeCate(cate.code)" class="mr-2 btn btn-xs btn-outline rounded-md"
+            :class="{ 'btn-active': selectedCate.code == cate.code }">
             {{ cate.name }}
           </button>
         </div>
@@ -127,7 +127,7 @@ onMounted(() => {
         <!--skus-->
         <div
           class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-x-3 gap-y-4">
-          <div v-for=" sku  in  skus " @click="selectSKU(sku)"
+          <div v-for=" sku in skus" @click="selectSKU(sku)"
             class="relative w-full card bg-base-100 shadow-xl rounded-md card-compact cursor-pointer">
             <span v-if="sku.stock == 0"
               class="z-10 absolute -right-px -top-px rounded-bl-2xl rounded-tr-md bg-gray-600 px-3 py-1 text-xs font-medium uppercase tracking-widest text-white">

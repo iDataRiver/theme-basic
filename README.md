@@ -1,121 +1,121 @@
+En [中文](./README_CN.md)
+
 <div align="center">
 
 <h1 align="center">iDataRiver Theme(Basic)</h1>
 
-本项目是由[`iDataRiver平台`](https://www.idatariver.com/zh-cn)开源的`数字商品`独立站主题模板。
+This project is an open-source independent website project by [`iDataRiver`](https://www.idatariver.com).
 
-网站的项目/商品管理请前往[`iDataRiver平台`](https://www.idatariver.com/zh-cn)的`控制台`->`项目管理`进行操作。
+For project/product management, please go to `iDataRiver` `Console` -> `Project Management`.
 
-[商户入驻指南](https://docs.idatariver.com/zh/guide/04.01.merchant.html) / [演示 Demo](https://uselesss.org/) / [反馈 Issues](https://github.com/iDataRiver/theme-basic/issues)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FiDataRiver%2Ftheme-basic&env=NUXT_IDATARIVER_MERCHANT_SECRET&env=NUXT_PUBLIC_BASE_URL&project-name=idatariver-theme-basic&repository-name=theme-basic)
+[Business Guide](https://docs.idatariver.com/guide/04.01.merchant.html) / [Demo](https://uselesss.org/) / [Issues](https://github.com/iDataRiver/theme-basic/issues)
 
 </div>
 
-## 项目交流
+## Community
 
-如果看完文档依旧不会搭建的，可通过以下方式寻求帮助。
+* Telegram Merchant Group: https://t.me/idatariver_merchant
+* Discord Channel: https://discord.gg/Ag7EUvhub5
 
-* telegram: @jerseyer
-* telegram商户群: https://t.me/idatariver_merchant
-* 邮箱: support@idatariver.com
-* 官网客服 https://www.idatariver.com/
 
-## 模板特点
+## Features
 
-### 一键部署独立站, 零成本搭建
+### Supported by iDataRiver's backend capabilities
+This project is connected to the merchant open API of the `iDataRiver` platform, so it can directly use the data + payment + risk control + security capabilities provided by `iDataRiver`.
 
-无需开发，直接按照操作流程部署，仅需10分钟，小白也能使用，且完全免费。
+Merchants only need to configure it in the console to use it directly, without having to face the complex and costly underlying implementation.
 
-可完全使用自己的域名，不再依赖平台作为唯一入口。
+### SEO optimization
+The project uses SSR (server-side rendering) technology, so search engines can better index website info.
 
-### 基于iDataRiver的后端能力提供支持
+### Highly flexible custom script support
+Merchants can add custom JS scripts in the console to greatly increase functional flexibility.
 
-本模板底层对接[`iDataRiver平台`](https://www.idatariver.com/zh-cn)的商户开放API, 直接使用其提供的数据+支付+风控+安全等各项能力。
+### Automatic support for global multi-language translation
+Not only does the project itself support multiple languages, it also supports intelligent translation of project/product descriptions into 18 languages ​​by default, making your business truly global.
 
-商户只需要在控制台做好配置即可直接使用，不需要自己去面对复杂且成本高昂的底层实现。
+### First-level agent function
+The project is fully compatible with the agent function of the platform merchants. For detailed introduction, see [document](https://docs.idatariver.com/guide/04.07.affiliates.html).
 
-### 自动支持全球多国语言翻译
+### Provide basic API encryption
+Provides basic API signature encryption functions and also supports merchants to customize signature secret, effectively increasing the threshold for attacks such as ddos.
 
-不仅网站本身支持多语言，还默认支持将项目/商品描述进行智能翻译，让你的业务真正全球化。
+### Secondary development
+For developers, you can read [Merchant Open API](https://docs.idatariver.com/guide/04.06.developer.html) for secondary development.
 
-### 一级代理商功能
+## Deploy
 
-本模板完全兼容平台商户的代理商功能, 详细介绍可见[文档](https://docs.idatariver.com/zh/guide/04.07.affiliates.html)
+This project is developed based on `Nuxt3` and can be directly deployed on platforms such as `Vercel`.
 
-### 提供基础的API加密
+If you have no deployment experience, you can choose [Quick Deployment Solution](https://docs.idatariver.com/guide/04.10.website.html).
 
-本模板提供基础的API签名加密功能，也支持商户自定义签名密钥，有效增加逆向/ddos等攻击门槛
+If you have some deployment experience, you can manually deploy it according to the following steps:
 
-## 快速部署
+### 1. Fork this project to your own `Github` account
 
-本前端项目基于`Nuxt3`开发，可在如`vercel`这类主流的网站托管平台上直接部署上线。
+![fork this project](./docs/images/fork.jpg)
 
-步骤如下:
+### 2. Register a [`Vercel account`](https://vercel.com/), bind the `Github` account in step 1, and authorize access to the forked project
 
-### 1. 注册你的`Github`账号，并将本项目fork到自己的账号下
+The `Vercel` account needs to be bound to your mobile phone number. You can use our [SMS Service](https://www.idatariver.com/app/sms-helper) to protect your privacy.
 
-![fork本项目](./docs/images/fork.jpg)
+### 3. Create a new project in the Vercel console and import the project from step 2:
 
-### 2. 注册一个[`Vercel账号`](https://vercel.com/)，绑定步骤1的`Github`账号，并授权访问fork的本项目
+Create a project on Vercel
+![vercel create project](./docs/images/vercel-add-project.jpg)
 
-### 3. 在`Vercel`控制台创建一个新项目，导入步骤2的项目:
+Add project access permissions
+![vercel add project access permissions](./docs/images/vercel-add-permission.jpg)
 
-在Vercel上创建项目
-![vercel创建项目](./docs/images/vercel-add-project.jpg)
+Import the project to be deployed
+![vercel import project](./docs/images/vercel-project-import.jpg)
 
-添加项目访问权限
-![vercel添加项目访问权限](./docs/images/vercel-add-permission.jpg)
-
-导入要部署的项目
-![vercel导入项目](./docs/images/vercel-project-import.jpg)
-
-开始部署项目，并设置以下的环境变量:
+Start deploying the project and set the following environment variables:
 
 #### `NUXT_IDATARIVER_MERCHANT_SECRET`
-设置为你自己的商户开发者密钥，可在[`iDataRiver平台`](https://www.idatariver.com/zh-cn)控制台的商户设置里获取。
-这个参数用来标识你的商户账号，所以必须填写。
-
-#### `NUXT_PUBLIC_BASE_URL`
-大部分情况下你需要使用自己的域名访问网站，这个值填写你自己的域名地址，格式如下: `https://www.idatariver.com`
-
-请注意: `https://` 前缀不能省掉。
+Deployment secret, this parameter must be filled in, which can be obtained after configuration in `Merchant Settings` -> `Website` of the [`iDataRiver Console`](https://www.idatariver.com/console/merchant/settings).
 
 #### `NUXT_PUBLIC_API_ENCRYPT_KEY`
-可选参数，用于自定义API层面的加密签名，从而获得更好的安全保护，可以自行设置其值。
+Optional parameter, used to customize the encryption signature at the API level to obtain better security protection, and its value can be set by yourself.
 
-![vercel部署项目](./docs/images/vercel-deploy.jpg)
+![vercel deployment project](./docs/images/vercel-deploy.jpg)
 
-以上几个环境变量设置好之后，点击`Deploy`进行部署，等待一分钟左右你的商户独立站就能部署成功。
+After setting the above environment variables, click `Deploy` to deploy, and wait for about a minute for your website to be successfully deployed.
 
-![vercel项目部署成功](./docs/images/vercel-deploy-ok.jpg)
+![vercel project deployed successfully](./docs/images/vercel-deploy-ok.jpg)
 
-### 4. 绑定域名
+### 4. Bind domain name
 
-如果3中没有配置域名，则可以跳过此步骤，这时你可以使用`Vercel`为你提供的域名进行访问。
+> If you don't have a domain name yet, it is strongly recommended to use the [Simple Domain Name service](https://www.idatariver.com/app/domain) provided by `iDataRiver` to fully protect your privacy.
 
-强烈建议绑定自己的域名，因为每次重新部署后自动分配的Vercel域名都可能会变化。
+After the deployment is successful, click the `Domains` and follow the specified operations.
 
-部署成功后，点击部署好的项目右上角有一个`Domain`(域名)入口，配置好3中设定的域名，按照指定操作即可。
+![vercel enters domain name configuration](./docs/images/vercel-domain-enter.jpg)
 
-![vercel进入域名配置](./docs/images/vercel-domain-enter.jpg)
+Add your domain name:
 
-在Vercel对部署好的网站进行域名绑定
+![vercel binds domain name](./docs/images/vercel-domain-add.jpg)
 
-![vercel绑定域名](./docs/images/vercel-domain-add.jpg)
+Finally, add the corresponding DNS records to the domain name.
 
-如果使用[`CloudFlare`](https://www.cloudflare.com/)免费托管域名，则需要如下配置:
+#### Use CloudFlare to host your domain
 
-添加Vercel要求的DNS解析记录后(代理模式)
+You can use [`CloudFlare`](https://www.cloudflare.com/) to host your domain for free, you need to configure it as follows:
 
-![cloudflare添加dns解析](./docs/images/cf-dns.jpg)
+After adding the DNS records required by Vercel (proxy mode).
 
-将域名的`SSL/TLS`设置为`完全`端到端加密
+![cloudflare adds dns resolution](./docs/images/cf-dns.jpg)
 
-![cloudflare设置为完全端到端加密](./docs/images/cf-ssl.jpg)
+Set the domain's `SSL/TLS` to `full` end-to-end encryption
 
-### 5. 最后
+![cloudflare is set to full end-to-end encryption](./docs/images/cf-ssl.jpg)
 
-至此，你已成功部署自己的独立站，如果需要升级/更新模板重新部署，需要在`Vercel`里将原先的项目删除，然后重新按照上面的步骤进行操作以便。
 
-如果前端模板有更新，你想同步更新的话，需要在`fork`的项目里手动`Sync`同步一次，然后再重新部署。
+### 5. Finally
+Now, your website has been successfully deployed and launched.
+
+If you need to upgrade to the latest version after a period of time, there are two ways:
+
+1. Delete the original project in `Vercel`, and then follow the above steps again.
+
+2. Manually `Sync` the project you `fork` on `Github`, and then manually trigger a deployment in `Vercel`.
