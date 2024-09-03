@@ -88,10 +88,10 @@ export default {
   Name: "ਨਾਮ",
   Price: "ਕੀਮਤ",
   Status: "ਸਥਿਤੀ",
-  Date: "ਤਾਰੀਖ਼",
+  Date: "ਤਾਰੀਖ",
   txn_order_status_NEW: "ਨਵਾਂ",
   txn_order_status_EXPIRED: "ਮਿਆਦ ਪੁੱਗ ਗਈ",
-  txn_order_status_PAID: "ਦਾ ਭੁਗਤਾਨ",
+  txn_order_status_PAID: "ਭੁਗਤਾਨ ਕੀਤਾ",
   txn_order_status_DONE: "ਪੂਰਾ",
   txn_order_status_REFUND: "ਰਿਫੰਡ",
   tansation_not_found: "ਅਜੇ ਤੱਕ ਕੋਈ ਇਤਿਹਾਸ ਨਹੀਂ ਮਿਲਿਆ",
@@ -104,7 +104,7 @@ export default {
   order_coupon: "ਕੂਪਨ",
   creation_date: "ਰਚਨਾ ਮਿਤੀ",
   order_expired: "ਆਰਡਰ ਦੀ ਮਿਆਦ ਖਤਮ ਹੋ ਗਈ ਹੈ",
-  order_paid: "ਦਾ ਭੁਗਤਾਨ",
+  order_paid: "ਭੁਗਤਾਨ ਕੀਤਾ",
   order_done: "ਆਰਡਰ ਪੂਰਾ",
   order_tip1:
     "ਭੁਗਤਾਨ ਪੂਰਾ ਹੋਣ ਤੋਂ ਬਾਅਦ, ਖਰੀਦ ਸਮੱਗਰੀ ਨੂੰ ਵੇਖਣ ਲਈ ਇਸ ਪੰਨੇ ਤੇ ਵਾਪਸ ਜਾਓ.",
@@ -122,4 +122,5 @@ export default {
   platform_payment_hiicash: "ਹਿਚੈਸ਼ ਤਨਖਾਹ",
   hiicash_vendor_tip: "ਹਾਇਕੈਸ਼ ਵਾ ou ਚਰ ਖਰੀਦਣ ਲਈ.",
   Search: "ਖੋਜ",
+  product_name: "ਉਤਪਾਦ ਦਾ ਨਾਮ",
 };
