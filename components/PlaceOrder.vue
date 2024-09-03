@@ -33,7 +33,7 @@ const clear = () => {
             {{ descI18n(locale, sku) }}
           </div>
 
-          <div v-if="!sku.docLink" class="text-xs">
+          <div v-if="sku.docLink" class="text-xs">
             <span class="text-xs text-gray-800 font-medium">{{ $t('more_see_doc') }}</span>
             👉 <a target="_blank" :href="sku.docLink" class="font-medium underline text-blue-500">[link]</a>
           </div>

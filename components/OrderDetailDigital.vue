@@ -198,7 +198,7 @@ const isHiicashEnabled = () => {
           {{ descI18n(locale, order.sku) }}
         </div>
 
-        <div v-if="!order.sku.docLink" class="text-xs">
+        <div v-if="order.sku.docLink" class="text-xs">
           <span class="text-xs text-gray-800 font-medium">{{ $t('more_see_doc') }}</span>
           👉 <a target="_blank" :href="order.sku.docLink" class="font-medium underline text-blue-500">[link]</a>
         </div>
