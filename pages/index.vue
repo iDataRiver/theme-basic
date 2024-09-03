@@ -1,6 +1,7 @@
 <script setup>
 const { locale } = useI18n()
 const merchantInfo = await stateMerchant.info(true)
+const themeId = merchantInfo.website ? merchantInfo.website.theme : '1'
 
 const seoInit = (infoObj) => {
   const info = isRef(infoObj) ? infoObj.value : infoObj
@@ -65,6 +66,8 @@ seoInit(merchantInfo)
 
 <template>
   <NuxtLayout name="simplified" :merchant="merchantInfo">
-    <HomeTheme1 :merchant="merchantInfo" />
+    <HomeTheme1 v-if="themeId == '1'" :merchant="merchantInfo" />
+    <HomeTheme2 v-else-if="themeId == '2'" :merchant="merchantInfo" />
+    <HomeTheme1 v-else :merchant="merchantInfo" />
   </NuxtLayout>
 </template>

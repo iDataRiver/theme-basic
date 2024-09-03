@@ -4,13 +4,15 @@ import { nameI18n } from '~/utils/i18n';
 const { locale } = useI18n()
 const localePath = useLocalePath()
 const basicInfo = await stateMerchant.basic(true)
+const themeId = basicInfo.website ? basicInfo.website.theme : '1'
 const scripts = basicInfo.website.script
 </script>
 
 <template>
   <NuxtLayout name="default">
     <div class="fixed top-0 z-20 w-full flex items-center justify-center bg-white">
-      <div class="w-full max-w-screen-xl bg-white px-1">
+      <div class="w-full bg-white px-4"
+        :class="{ 'max-w-screen-xl': themeId == '1', 'max-w-screen-lg': themeId == '2' }">
         <div class="flex items-center h-16">
           <div class="flex items-center justify-center bg-white gap-x-0.5">
             <svg class="w-7 h-7 text-blue-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
