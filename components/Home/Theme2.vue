@@ -18,6 +18,20 @@ projects.forEach((project) => {
     'name': nameI18n(locale, project),
     'code': project.slug,
   })
+
+  project.skus.forEach((sku) => {
+    sku.projectSlug = project.slug
+    sku.cover = project.cover
+    sku.project = {
+      id: project.id,
+      name: project.name,
+      nameI18n: project.nameI18n,
+      desc: project.desc,
+      descI18n: project.descI18n,
+      hasCoupons: project.hasCoupons,
+    }
+    sku.order.affCode = project.aff
+  })
 })
 
 watch(merchant, () => {
