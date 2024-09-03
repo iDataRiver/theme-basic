@@ -115,4 +115,5 @@ export default {// 中文
   platform_payment_hiicash: 'HiiCash代金券支付',
   hiicash_vendor_tip: '使用微信支付购买HiiCash代金券.',
   Search: '搜索',
+  product_name: '商品名称',
 }
