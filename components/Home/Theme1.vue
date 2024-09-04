@@ -51,6 +51,8 @@ const filterSkus = (projects, keyword = '') => {
 const props = defineProps(['merchant'])
 const merchant = useDataMerchantInfo()
 merchant.value = props.merchant
+const siteSettings = merchant.value.website ? merchant.value.website.settings : {}
+
 filterSkus(merchant.value.projects)
 
 watch(merchant, () => {
@@ -111,6 +113,10 @@ onMounted(() => {
           <BtnMerchantContact :contacts="merchant.contacts" :vertical="true" />
         </div>
       </div>
+
+      <ClientOnly>
+        <Carousel :siteConfig="siteSettings" />
+      </ClientOnly>
 
       <div v-if="!isNotEmptyObj(selectedSKU)" id="skus" class="space-y-4">
         <div class="space-y-2">
