@@ -10,7 +10,7 @@ const scripts = basicInfo.website.script
 
 <template>
   <NuxtLayout name="default">
-    <div class="fixed top-0 z-20 w-full flex items-center justify-center bg-white">
+    <div class="fixed top-0 z-50 w-full flex items-center justify-center bg-white">
       <div class="w-full bg-white px-4"
         :class="{ 'max-w-screen-xl': themeId == '1', 'max-w-screen-lg': themeId == '2' }">
         <div class="flex items-center h-16">

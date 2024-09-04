@@ -55,7 +55,7 @@ const selectedLocales = computed(() => {
       <component :is="selectedLocales.component"></component>
     </button>
     <!-- Dropdown -->
-    <div class="z-10 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-md shadow"
+    <div class="hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-md shadow"
       id="language-dropdown-menu">
       <ul class="h-80 overflow-y-auto py-2 font-medium" role="none">
         <li v-for="itemLocale in availableLocales" :key="'lang-' + itemLocale.code">
