@@ -75,7 +75,7 @@ onMounted(() => {
       </div>
 
       <ClientOnly>
-        <Carousel :siteConfig="siteSettings" />
+        <Carousel :siteSettings="siteSettings" />
       </ClientOnly>
 
       <div v-if="!isNotEmptyObj(selectedSKU)" id="projects" class="space-y-4">

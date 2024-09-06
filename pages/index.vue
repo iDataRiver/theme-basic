@@ -9,7 +9,7 @@ const seoInit = (infoObj) => {
     const url = useRequestURL().href
     const title = nameI18n(locale, info)
     let description = descI18n(locale, info).replace(/[\r\n]/g, ' ')
-    const logo = info.logo || 'https://docs.idatariver.com/logo.png'
+    //const logo = info.logo || 'https://docs.idatariver.com/logo.png'
 
     let itemListElement = []
     info.projects.forEach(project => {
@@ -35,7 +35,7 @@ const seoInit = (infoObj) => {
         { 'itemprop': 'name', 'content': title },
         { 'itemprop': 'description', 'content': description },
         { 'itemprop': 'url', 'content': url },
-        { 'itemprop': 'image', 'content': logo },
+        //{ 'itemprop': 'image', 'content': logo },
       ],
       script: [
         {
@@ -54,7 +54,7 @@ const seoInit = (infoObj) => {
       ogSiteName: title,
       ogTitle: title,
       ogUrl: url,
-      ogImage: logo,
+      //ogImage: logo,
       ogDescription: description,
     })
   }

@@ -1,14 +1,14 @@
 <script setup>
-const props = defineProps(['siteConfig'])
-const siteConfig = props.siteConfig
+const props = defineProps(['siteSettings'])
+const siteSettings = props.siteSettings
 </script>
 
 <template>
-  <div v-if="siteConfig.carousel && siteConfig.carousel.items" id="default-carousel" class="relative w-full"
-    :data-carousel="siteConfig.carousel.status">
+  <div v-if="siteSettings.carousel && siteSettings.carousel.items" id="default-carousel" class="relative w-full"
+    :data-carousel="siteSettings.carousel.status">
     <!-- Carousel wrapper -->
     <div class="relative h-56 overflow-hidden rounded-lg md:h-80">
-      <template v-for="item in siteConfig.carousel.items">
+      <template v-for="item in siteSettings.carousel.items">
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <a :href="item.url" target="_blank" class="h-56 md:h-80 cursor-pointer">
             <figure>
@@ -30,9 +30,9 @@ const siteConfig = props.siteConfig
       </template>
     </div>
     <!-- Slider indicators -->
-    <div v-if="siteConfig.carousel.items.length > 1"
+    <div v-if="siteSettings.carousel.items.length > 1"
       class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-      <template v-for="(item, index) in siteConfig.carousel.items">
+      <template v-for="(item, index) in siteSettings.carousel.items">
         <button type="button" class="w-3 h-3 rounded-full" :aria-current="index === 0" :aria-label="item.title"
           :data-carousel-slide-to="index"></button>
       </template>
