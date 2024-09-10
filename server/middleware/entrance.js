@@ -1,3 +1,5 @@
+import CryptoJS from 'crypto-js';
+
 const wrapMapi = async (event) => {
   const mapis = [
     '/api/merchant/basicInfo',
@@ -48,6 +50,12 @@ const wrapMapi = async (event) => {
     } else if (['/api/order/search'].includes(purePath)) {
       event.idatariverReq.cacheKey = event.path // with query params
     }
+
+    // prevent cacheKey too long, then cacheKey maybe invalid.
+    if (event.idatariverReq.cacheKey) {
+      event.idatariverReq.cacheKey = CryptoJS.MD5(event.idatariverReq.cacheKey).toString().toUpperCase()
+    }
+
   }
 }
 
