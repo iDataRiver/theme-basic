@@ -122,4 +122,7 @@ export default {
   hiicash_vendor_tip: "Hiicashバウチャーを購入します。",
   Search: "検索",
   product_name: "製品名",
+  DIGITAL: "デジタル製品",
+  GROUP: "グループメンバーシップ",
+  MANUAL: "マニュアルサービス",
 };

@@ -124,4 +124,7 @@ export default {
   hiicash_vendor_tip: "Para comprar vouchers Hiicash.",
   Search: "Procurar",
   product_name: "Nome do produto",
+  DIGITAL: "Produto digital",
+  GROUP: "Associação ao grupo",
+  MANUAL: "Serviço manual",
 };

@@ -12,7 +12,7 @@ const siteSettings = merchant.value.website ? merchant.value.website.settings : 
 const projects = merchant.value.projects
 
 projects.forEach((project) => {
-  if (!['DIGITAL', 'GROUP'].includes(project.type)) {
+  if (!['DIGITAL', 'MANUAL', 'GROUP'].includes(project.type)) {
     return
   }
   cates.value.push({
@@ -25,6 +25,7 @@ projects.forEach((project) => {
     sku.cover = project.cover
     sku.project = {
       id: project.id,
+      type: project.type,
       name: project.name,
       nameI18n: project.nameI18n,
       desc: project.desc,
@@ -90,7 +91,7 @@ onMounted(() => {
         <div class="space-y-4">
           <template v-for="project in projects">
             <template
-              v-if="['DIGITAL', 'GROUP'].includes(project.type) && project.skus.length > 0 && ['all', project.slug].includes(selectedCate.code)">
+              v-if="['DIGITAL', 'MANUAL', 'GROUP'].includes(project.type) && project.skus.length > 0 && ['all', project.slug].includes(selectedCate.code)">
 
               <details
                 class="group [&_summary::-webkit-details-marker]:hidden rounded-lg border1 border-gray-900 bg-gradient-to-b bg-white"

@@ -94,15 +94,17 @@ const clear = () => {
               <div class="badge badge-sm font-medium badge-outline rounded-md">
                 {{ $t('stock') }} {{ displayStock(sku.stock, sku.hiddenStock) }}
               </div>
-              <div v-if="sku.itemType === 'reuse'" class="badge badge-sm font-medium badge-outline rounded-md">
+              <span class="badge badge-sm font-medium badge-outline rounded-md">{{ $t(sku.project.type) }}</span>
+              <div v-if="sku.project.type === 'DIGITAL' && sku.itemType === 'reuse'"
+                class="badge badge-sm font-medium badge-outline rounded-md">
                 {{ $t('at_most_buy_one') }}
               </div>
-              <div class="badge badge-sm font-medium badge-outline rounded-md">
+              <div v-if="sku.project.type === 'DIGITAL'" class="badge badge-sm font-medium badge-outline rounded-md">
                 {{ $t('automatic_delivery') }}
               </div>
             </div>
 
-            <div class="space-y-2 mt-8">
+            <div class="space-y-2 mt-4">
               <label :for="'quantity-input-' + sku.id" class="flex text-sm font-medium text-gray-700">
                 {{ $t('Quantity') }}
               </label>

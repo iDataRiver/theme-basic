@@ -121,4 +121,7 @@ export default {
   hiicash_vendor_tip: "Hiicash 바우처를 구매하려면.",
   Search: "찾다",
   product_name: "제품 이름",
+  DIGITAL: "디지털 제품",
+  GROUP: "그룹 멤버십",
+  MANUAL: "수동 서비스",
 };

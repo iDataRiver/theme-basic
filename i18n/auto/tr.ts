@@ -121,4 +121,7 @@ export default {
   hiicash_vendor_tip: "Hiicash kuponları satın almak için.",
   Search: "Aramak",
   product_name: "Ürün adı",
+  DIGITAL: "Dijital ürün",
+  GROUP: "Grup üyeliği",
+  MANUAL: "Manuel hizmet",
 };
