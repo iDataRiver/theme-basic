@@ -127,4 +127,7 @@ export default {
   hiicash_vendor_tip: "Pour acheter des bons Hiicash.",
   Search: "Recherche",
   product_name: "Nom de produit",
+  DIGITAL: "Produit numérique",
+  GROUP: "Appartenance à un groupe",
+  MANUAL: "Service manuel",
 };

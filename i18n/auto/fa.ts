@@ -123,4 +123,7 @@ export default {
   hiicash_vendor_tip: "برای خرید کوپن Hiicash.",
   Search: "جستجو",
   product_name: "نام محصول",
+  DIGITAL: "محصول دیجیتالی",
+  GROUP: "عضویت گروهی",
+  MANUAL: "سرویس دستی",
 };

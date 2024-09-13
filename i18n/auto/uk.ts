@@ -124,4 +124,7 @@ export default {
   hiicash_vendor_tip: "Придбати ваучери HIICASH.",
   Search: "Обшук",
   product_name: "Назва товару",
+  DIGITAL: "Цифровий продукт",
+  GROUP: "Групове членство",
+  MANUAL: "Ручне обслуговування",
 };

@@ -56,7 +56,7 @@ export default {
   server_op_failed: "Жұмыс істемеді",
   per_request: "/ сұрау",
   per_item: "/ зат",
-  free_price_tag: "Босату",
+  free_price_tag: "Тегін",
   freemium_price_tag: "Күлімгер",
   low_to: "Төмен",
   dynamic_pricing_tag: "Сіз барған кезде төлеңіз",
@@ -122,4 +122,7 @@ export default {
   hiicash_vendor_tip: "Хиикаш ваучерлерін сатып алу.",
   Search: "Іздеу",
   product_name: "Өнім атауы",
+  DIGITAL: "Сандық өнім",
+  GROUP: "Топ мүшелігі",
+  MANUAL: "Қолмен қызмет",
 };

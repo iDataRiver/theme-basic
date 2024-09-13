@@ -129,4 +129,7 @@ export default {
   hiicash_vendor_tip: "Hiicash -Gutscheine kaufen.",
   Search: "Suchen",
   product_name: "Produktname",
+  DIGITAL: "Digitales Produkt",
+  GROUP: "Gruppenmitgliedschaft",
+  MANUAL: "Manueller Service",
 };

@@ -59,7 +59,7 @@ export default {
   free_price_tag: "Bezpłatny",
   freemium_price_tag: "Freemium",
   low_to: "Niski do",
-  dynamic_pricing_tag: "Płacić jak idziesz",
+  dynamic_pricing_tag: "Płacić w razie potrzeby",
   stock: "Magazyn",
   Sold_out: "Wyprzedane",
   All: "Wszystko",
@@ -121,4 +121,7 @@ export default {
   hiicash_vendor_tip: "Aby kupić kupony Hiicash.",
   Search: "Szukaj",
   product_name: "Nazwa produktu",
+  DIGITAL: "Produkt cyfrowy",
+  GROUP: "Członkostwo w grupie",
+  MANUAL: "Obsługa ręczna",
 };

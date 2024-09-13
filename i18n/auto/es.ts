@@ -129,4 +129,7 @@ export default {
   hiicash_vendor_tip: "Comprar cupones Hiicash.",
   Search: "Buscar",
   product_name: "Nombre del producto",
+  DIGITAL: "Producto digital",
+  GROUP: "Membresía del grupo",
+  MANUAL: "Servicio manual",
 };

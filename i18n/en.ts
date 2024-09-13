@@ -116,4 +116,7 @@ export default {// En
   hiicash_vendor_tip: 'To purchase HiiCash vouchers.',
   Search: 'Search',
   product_name: 'Product Name',
+  DIGITAL: 'Digital Product',
+  GROUP: 'Group Membership',
+  MANUAL: 'Manual Service',
 }

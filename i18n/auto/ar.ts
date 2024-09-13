@@ -118,4 +118,7 @@ export default {
   hiicash_vendor_tip: "لشراء قسائم hiicash.",
   Search: "يبحث",
   product_name: "اسم المنتج",
+  DIGITAL: "المنتج الرقمي",
+  GROUP: "عضوية المجموعة",
+  MANUAL: "الخدمة اليدوية",
 };

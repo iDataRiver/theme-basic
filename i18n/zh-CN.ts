@@ -116,4 +116,7 @@ export default {// 中文
   hiicash_vendor_tip: '使用微信支付购买HiiCash代金券.',
   Search: '搜索',
   product_name: '商品名称',
+  DIGITAL: '数字商品',
+  GROUP: '付费群组',
+  MANUAL: '人工交付',
 }

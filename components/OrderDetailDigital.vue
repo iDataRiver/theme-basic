@@ -69,6 +69,7 @@ const isHiicashEnabled = () => {
         <div class="text-xl font-bold text-gray-800">{{ nameI18n(locale, order.sku) }}</div>
 
         <div class="mb-2 sm:space-x-2 space-y-2">
+          <span class="badge badge-sm font-medium badge-outline rounded-md">{{ $t(order.projectType) }}</span>
           <span v-if="order.sku.itemType === 'reuse'" class="badge badge-sm font-medium badge-outline rounded-md">
             {{ $t('at_most_buy_one') }}
           </span>
@@ -174,7 +175,7 @@ const isHiicashEnabled = () => {
       </div>
     </div>
 
-    <div v-if="isNotEmptyObj(order) && order.digitalItemsStr !== ''" class="space-y-4">
+    <div v-if="isNotEmptyObj(order) && order.digitalItemsStr" class="space-y-4">
       <div class="border-t"></div>
 
       <div id="digitalItems" class="grid grid-cols-1 space-y-2">

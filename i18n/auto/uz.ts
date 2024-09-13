@@ -126,4 +126,7 @@ export default {
   hiicash_vendor_tip: "Hovaş vaucherlarni sotib olish.",
   Search: "Qidirish",
   product_name: "Mahsulot nomi",
+  DIGITAL: "Raqamli mahsulot",
+  GROUP: "Guruh a'zoligi",
+  MANUAL: "Qo'lda xizmat",
 };

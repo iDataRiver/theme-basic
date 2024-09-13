@@ -123,4 +123,7 @@ export default {
   hiicash_vendor_tip: "ਹਾਇਕੈਸ਼ ਵਾ ou ਚਰ ਖਰੀਦਣ ਲਈ.",
   Search: "ਖੋਜ",
   product_name: "ਉਤਪਾਦ ਦਾ ਨਾਮ",
+  DIGITAL: "ਡਿਜੀਟਲ ਉਤਪਾਦ",
+  GROUP: "ਸਮੂਹ ਮੈਂਬਰਸ਼ਿਪ",
+  MANUAL: "ਮੈਨੁਅਲ ਸੇਵਾ",
 };

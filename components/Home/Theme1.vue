@@ -13,7 +13,7 @@ const filterSkus = (projects, keyword = '') => {
   const showSkus = []
 
   projects.forEach((project) => {
-    if (!['DIGITAL', 'GROUP'].includes(project.type)) {
+    if (!['DIGITAL', 'MANUAL', 'GROUP'].includes(project.type)) {
       return
     }
 
@@ -33,6 +33,7 @@ const filterSkus = (projects, keyword = '') => {
       sku.cover = project.cover
       sku.project = {
         id: project.id,
+        type: project.type,
         name: project.name,
         nameI18n: project.nameI18n,
         desc: project.desc,
