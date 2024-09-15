@@ -75,7 +75,7 @@ onMounted(() => {
         </div>
       </div>
 
-      <ClientOnly>
+      <ClientOnly v-if="!isNotEmptyObj(selectedSKU)">
         <Carousel :siteSettings="siteSettings" />
       </ClientOnly>
 
