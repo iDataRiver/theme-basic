@@ -1,14 +1,6 @@
 <script setup>
 const props = defineProps(['order'])
 const order = props.order
-const translate = useNuxtApp().$i18n.t
-const paymentName = (name) => {
-  if (['credits', 'crypto', 'alipay', 'wxpay', 'hiicash'].includes(name)) {
-    return translate('platform_payment_' + name)
-  }
-  return name
-}
-
 const { locale } = useI18n()
 
 const composeOrderUrl = (method, id) => {
