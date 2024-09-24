@@ -124,4 +124,5 @@ export default {
   DIGITAL: "디지털 제품",
   GROUP: "그룹 멤버십",
   MANUAL: "수동 서비스",
+  Payment_fee: "지불 수수료",
 };

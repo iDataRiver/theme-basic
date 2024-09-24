@@ -132,4 +132,5 @@ export default {
   DIGITAL: "Digitales Produkt",
   GROUP: "Gruppenmitgliedschaft",
   MANUAL: "Manueller Service",
+  Payment_fee: "Zahlungsgebühren",
 };

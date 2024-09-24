@@ -130,4 +130,5 @@ export default {
   DIGITAL: "Produit numérique",
   GROUP: "Appartenance à un groupe",
   MANUAL: "Service manuel",
+  Payment_fee: "Frais de paiement",
 };

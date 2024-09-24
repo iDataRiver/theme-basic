@@ -126,4 +126,5 @@ export default {
   DIGITAL: "ਡਿਜੀਟਲ ਉਤਪਾਦ",
   GROUP: "ਸਮੂਹ ਮੈਂਬਰਸ਼ਿਪ",
   MANUAL: "ਮੈਨੁਅਲ ਸੇਵਾ",
+  Payment_fee: "ਭੁਗਤਾਨ ਫੀਸਾਂ",
 };

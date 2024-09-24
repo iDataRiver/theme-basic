@@ -126,4 +126,5 @@ export default {
   DIGITAL: "محصول دیجیتالی",
   GROUP: "عضویت گروهی",
   MANUAL: "سرویس دستی",
+  Payment_fee: "هزینه پرداخت",
 };

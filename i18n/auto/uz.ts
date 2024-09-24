@@ -129,4 +129,5 @@ export default {
   DIGITAL: "Raqamli mahsulot",
   GROUP: "Guruh a'zoligi",
   MANUAL: "Qo'lda xizmat",
+  Payment_fee: "To'lov to'lovlari",
 };
