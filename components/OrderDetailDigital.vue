@@ -45,16 +45,6 @@ if (payStatus.value === 'WAIT') {
     }
   }, 1000)
 }
-
-const isHiicashEnabled = () => {
-  let hiicashEnabled = false
-  order.value.mPayments.forEach((payment) => {
-    if (payment.enabled && payment.method == 'hiicash') {
-      hiicashEnabled = true
-    }
-  })
-  return hiicashEnabled
-}
 </script>
 
 <template>
@@ -131,13 +121,6 @@ const isHiicashEnabled = () => {
           </div>
 
           <div class="mt-2 space-y-1">
-            <p v-if="isHiicashEnabled()" class="text-ms font-medium">
-              * {{ $t('hiicash_vendor_tip') }}
-              <a target="_blank" :href="`${useRuntimeConfig().public.idatariverServer}/txn/hiicash/vendor`"
-                class="text-blue-500 font-bold">
-                👉 [link]
-              </a>
-            </p>
             <p class="text-sm font-medium text-red-600">* {{ $t('order_tip1') }}</p>
             <p v-if="order.anonymous" class="text-sm font-medium text-red-600">
               * {{ $t('order_anonymous_tip') }}
