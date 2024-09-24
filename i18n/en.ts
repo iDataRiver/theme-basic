@@ -119,4 +119,5 @@ export default {// En
   DIGITAL: 'Digital Product',
   GROUP: 'Group Membership',
   MANUAL: 'Manual Service',
+  Payment_fee: 'Payment fees',
 }

@@ -121,4 +121,5 @@ export default {
   DIGITAL: "المنتج الرقمي",
   GROUP: "عضوية المجموعة",
   MANUAL: "الخدمة اليدوية",
+  Payment_fee: "رسوم الدفع",
 };

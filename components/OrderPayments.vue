@@ -17,9 +17,26 @@ const composeOrderUrl = (method, id) => {
       <template v-for="payment in order.mPayments">
         <div v-if="payment.enabled && payment.method !== 'credits'">
           <a target="_blank" :href="composeOrderUrl(payment.method, order.id)"
-            class="w-full font-bold rounded-md text-white px-3 py-1.5 text-sm cursor-pointer"
-            :class="[payment.isPlatform ? 'bg-yellow-300 hover:bg-yellow-400' : 'bg-green-400 hover:bg-green-500']">
-            {{ paymentName(payment.name) }}
+            class="flex font-bold rounded-md px-3 py-1.5 text-sm cursor-pointer bg-gray-200 hover:bg-gray-300">
+            <div class="text-left">
+              <div class="font-bold text-sm cursor-pointer"
+                :class="[payment.isPlatform ? 'text-blue-600' : 'text-green-600']">
+                {{ paymentName(payment.name) }}
+                <span class="text-[11px] font-medium text-gray-800">{{ payment.desc }}</span>
+              </div>
+              <p v-if="payment.isPlatform" class="text-[11px] text-gray-800">
+                <span v-if="payment.paymentFeeCovered">
+                  + {{ $t('Payment_fee') }}: 0%
+                </span>
+                <span v-else>
+                  + {{ $t('Payment_fee') }}: {{ payment.ratioRange }}
+                </span>
+                <span v-if="payment.fixedFeeRange">+{{ payment.fixedFeeRange }}</span>
+              </p>
+              <p v-else class="text-[11px] text-gray-800">
+                + {{ $t('Payment_fee') }}: 0%
+              </p>
+            </div>
           </a>
         </div>
       </template>

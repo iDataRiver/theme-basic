@@ -112,11 +112,12 @@ export default {// 中文
   platform_payment_alipay: '支付宝',
   platform_payment_wxpay: '微信支付',
   platform_payment_crypto: '加密货币支付',
-  platform_payment_hiicash: 'HiiCash代金券支付',
+  platform_payment_hiicash: 'HiiCash隐私支付(微信/支付宝)',
   hiicash_vendor_tip: '使用微信支付购买HiiCash代金券.',
   Search: '搜索',
   product_name: '商品名称',
   DIGITAL: '数字商品',
   GROUP: '付费群组',
   MANUAL: '人工交付',
+  Payment_fee: '支付通道费',
 }

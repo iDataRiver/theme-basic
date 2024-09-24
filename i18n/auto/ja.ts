@@ -125,4 +125,5 @@ export default {
   DIGITAL: "デジタル製品",
   GROUP: "グループメンバーシップ",
   MANUAL: "マニュアルサービス",
+  Payment_fee: "支払い料",
 };

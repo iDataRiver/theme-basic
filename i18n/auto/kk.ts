@@ -20,7 +20,7 @@ export default {
   server_internal_error: "Аралық қате",
   server_order_payment_succ: "Төлемді сәтті төлеу сәтті",
   server_internal_exception: "Ішкі ерекшелік",
-  server_order_wrong_payment_user: "Қате төлем қолданушысы",
+  server_order_wrong_payment_user: "Қате төлем пайдаланушысы",
   server_order_pay_status_error: "Тапсырыс беруге болмайды",
   server_order_expired: "Тапсырыс мерзімі өткен",
   server_insufficient_credits: "Несиелер жеткіліксіз",
@@ -56,7 +56,7 @@ export default {
   server_op_failed: "Жұмыс істемеді",
   per_request: "/ сұрау",
   per_item: "/ зат",
-  free_price_tag: "Тегін",
+  free_price_tag: "Босату",
   freemium_price_tag: "Күлімгер",
   low_to: "Төмен",
   dynamic_pricing_tag: "Сіз барған кезде төлеңіз",
@@ -125,4 +125,5 @@ export default {
   DIGITAL: "Сандық өнім",
   GROUP: "Топ мүшелігі",
   MANUAL: "Қолмен қызмет",
+  Payment_fee: "Төлемақы төлемі",
 };

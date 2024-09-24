@@ -124,4 +124,5 @@ export default {
   DIGITAL: "Dijital ürün",
   GROUP: "Grup üyeliği",
   MANUAL: "Manuel hizmet",
+  Payment_fee: "Ödeme ücretleri",
 };
