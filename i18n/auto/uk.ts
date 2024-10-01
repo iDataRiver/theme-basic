@@ -44,7 +44,7 @@ export default {
     "Будь ласка, спочатку заповніть інформацію про гаманець",
   server_already_withdrawal_processing: "Вже виведення, яке обробляється",
   server_exceed_max_create_num: "Перевищує максимуну num",
-  server_specific_sku_can_not_empty: "Конкретний предмет не може бути порожнім",
+  server_specific_sku_can_not_empty: "Конкретний елемент не може бути порожнім",
   server_max_one_global_plan: "Максимум один глобальний план",
   server_specific_plan_has_exists_item:
     "Якийсь предмет вже існує в конкретному плані",
@@ -128,4 +128,5 @@ export default {
   GROUP: "Групове членство",
   MANUAL: "Ручне обслуговування",
   Payment_fee: "Платіжні збори",
+  LICENSE: "Служба ліцензії",
 };

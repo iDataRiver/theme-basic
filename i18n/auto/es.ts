@@ -133,4 +133,5 @@ export default {
   GROUP: "Membresía del grupo",
   MANUAL: "Servicio manual",
   Payment_fee: "Tarifas de pago",
+  LICENSE: "Servicio de licencia",
 };

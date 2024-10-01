@@ -90,5 +90,5 @@ const configZh = {
     },
   ]
 }
-//export default defineConfig(configEn)
-export default defineConfig(configZh)
+export default defineConfig(configEn)
+//export default defineConfig(configZh)

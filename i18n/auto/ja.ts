@@ -126,4 +126,5 @@ export default {
   GROUP: "グループメンバーシップ",
   MANUAL: "マニュアルサービス",
   Payment_fee: "支払い料",
+  LICENSE: "ライセンスサービス",
 };

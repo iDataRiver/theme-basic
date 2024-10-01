@@ -127,4 +127,5 @@ export default {
   GROUP: "ਸਮੂਹ ਮੈਂਬਰਸ਼ਿਪ",
   MANUAL: "ਮੈਨੁਅਲ ਸੇਵਾ",
   Payment_fee: "ਭੁਗਤਾਨ ਫੀਸਾਂ",
+  LICENSE: "ਲਾਇਸੰਸ ਸੇਵਾ",
 };

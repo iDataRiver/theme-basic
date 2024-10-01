@@ -162,7 +162,10 @@ if (payStatus.value === 'WAIT') {
       <div class="border-t"></div>
 
       <div id="digitalItems" class="grid grid-cols-1 space-y-2">
-        <div class="pr-6 text-lg font-medium text-gray-500">{{ $t('order_digital_items') }}</div>
+        <div class="flex items-center">
+          <div class="pr-2 text-lg font-medium text-gray-500">{{ $t('order_digital_items') }}</div>
+          <BtnCopy :text="order.digitalItemsStr" btn-size="small" />
+        </div>
         <div>
           <textarea :value="order.digitalItemsStr" type="text" rows="5" maxlength="1000000"
             class="w-full px-3 py-2 border rounded-md border-gray-300 bg-gray-100 focus:bg-white text-gray-800 focus:ring-gray-900 focus:border-gray-900"

@@ -125,4 +125,5 @@ export default {
   GROUP: "Członkostwo w grupie",
   MANUAL: "Obsługa ręczna",
   Payment_fee: "Opłaty za płatność",
+  LICENSE: "Usługa licencyjna",
 };

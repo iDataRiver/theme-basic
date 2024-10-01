@@ -119,4 +119,5 @@ export default {// 中文
   GROUP: '付费群组',
   MANUAL: '人工交付',
   Payment_fee: '支付通道费',
+  LICENSE: '授权码',
 }
