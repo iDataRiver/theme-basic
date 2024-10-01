@@ -119,4 +119,5 @@ export default {// En
   GROUP: 'Group Membership',
   MANUAL: 'Manual Service',
   Payment_fee: 'Payment fees',
+  LICENSE: 'LICENSE Service',
 }

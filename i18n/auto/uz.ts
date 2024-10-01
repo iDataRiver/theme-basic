@@ -130,4 +130,5 @@ export default {
   GROUP: "Guruh a'zoligi",
   MANUAL: "Qo'lda xizmat",
   Payment_fee: "To'lov to'lovlari",
+  LICENSE: "Litsenziya xizmati",
 };

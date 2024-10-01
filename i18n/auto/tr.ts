@@ -125,4 +125,5 @@ export default {
   GROUP: "Grup üyeliği",
   MANUAL: "Manuel hizmet",
   Payment_fee: "Ödeme ücretleri",
+  LICENSE: "Lisans hizmeti",
 };

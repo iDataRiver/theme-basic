@@ -125,4 +125,5 @@ export default {
   GROUP: "그룹 멤버십",
   MANUAL: "수동 서비스",
   Payment_fee: "지불 수수료",
+  LICENSE: "라이센스 서비스",
 };

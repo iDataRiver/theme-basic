@@ -127,4 +127,5 @@ export default {
   GROUP: "عضویت گروهی",
   MANUAL: "سرویس دستی",
   Payment_fee: "هزینه پرداخت",
+  LICENSE: "سرویس مجوز",
 };

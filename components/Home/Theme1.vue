@@ -13,7 +13,7 @@ const filterSkus = (projects, keyword = '') => {
   const showSkus = []
 
   projects.forEach((project) => {
-    if (!['DIGITAL', 'MANUAL', 'GROUP'].includes(project.type)) {
+    if (!['DIGITAL', 'MANUAL', 'LICENSE', 'GROUP'].includes(project.type)) {
       return
     }
 

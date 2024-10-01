@@ -121,4 +121,5 @@ export default {
   GROUP: "付費群組",
   MANUAL: "人工交付",
   Payment_fee: "支付通道費",
+  LICENSE: "授權碼",
 };
