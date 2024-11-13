@@ -129,4 +129,5 @@ export default {
   MANUAL: "Serviço manual",
   Payment_fee: "Taxas de pagamento",
   LICENSE: "Serviço de licença",
+  platform_payment_onramp: "Compre criptografia para pagar",
 };

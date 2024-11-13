@@ -23,7 +23,7 @@ export default {
   server_order_payment_succ: "Zahlungszahlung erfolgreich",
   server_internal_exception: "Interne Ausnahme",
   server_order_wrong_payment_user: "Falscher Zahlungsbenutzer",
-  server_order_pay_status_error: "Bestellung kann nicht puzentiert werden",
+  server_order_pay_status_error: "Bestellung kann nicht puzentiert",
   server_order_expired: "Bestellung ist abgelaufen",
   server_insufficient_credits: "Unzureichende Credits",
   server_redeem_code_unknown: "Code einlösen nicht existiert nicht",
@@ -134,4 +134,5 @@ export default {
   MANUAL: "Manueller Service",
   Payment_fee: "Zahlungsgebühren",
   LICENSE: "Lizenzservice",
+  platform_payment_onramp: "Kaufen Sie Krypto, um zu bezahlen",
 };

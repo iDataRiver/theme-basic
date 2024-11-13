@@ -122,4 +122,5 @@ export default {
   MANUAL: "人工交付",
   Payment_fee: "支付通道費",
   LICENSE: "授權碼",
+  platform_payment_onramp: "購買加密貨幣進行支付",
 };
