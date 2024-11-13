@@ -126,4 +126,5 @@ export default {
   MANUAL: "Obsługa ręczna",
   Payment_fee: "Opłaty za płatność",
   LICENSE: "Usługa licencyjna",
+  platform_payment_onramp: "Kup krypto, aby zapłacić",
 };

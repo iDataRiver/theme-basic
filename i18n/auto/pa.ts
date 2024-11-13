@@ -128,4 +128,5 @@ export default {
   MANUAL: "ਮੈਨੁਅਲ ਸੇਵਾ",
   Payment_fee: "ਭੁਗਤਾਨ ਫੀਸਾਂ",
   LICENSE: "ਲਾਇਸੰਸ ਸੇਵਾ",
+  platform_payment_onramp: "ਭੁਗਤਾਨ ਕਰਨ ਲਈ ਕ੍ਰਿਪਟੂ ਖਰੀਦੋ",
 };

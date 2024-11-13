@@ -56,7 +56,7 @@ export default {
   server_op_failed: "Жұмыс істемеді",
   per_request: "/ сұрау",
   per_item: "/ зат",
-  free_price_tag: "Босату",
+  free_price_tag: "Тегін",
   freemium_price_tag: "Күлімгер",
   low_to: "Төмен",
   dynamic_pricing_tag: "Сіз барған кезде төлеңіз",
@@ -108,7 +108,7 @@ export default {
   order_done: "Тапсырыс аяқталды",
   order_tip1:
     "! Төлем аяқталғаннан кейін, сатып алынған мазмұнды көру үшін осы беттен оралыңыз.",
-  minutes: "минуттары",
+  minutes: "минуттар",
   seconds: "секіру",
   order_countdown: "Төлемді кері санау",
   sku_desc: "Өнім сипаттамасы",
@@ -127,4 +127,5 @@ export default {
   MANUAL: "Қолмен қызмет",
   Payment_fee: "Төлемақы төлемі",
   LICENSE: "Лицензиялық қызмет",
+  platform_payment_onramp: "Төлеу үшін крипто сатып алыңыз",
 };

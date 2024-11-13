@@ -126,4 +126,5 @@ export default {
   MANUAL: "Manuel hizmet",
   Payment_fee: "Ödeme ücretleri",
   LICENSE: "Lisans hizmeti",
+  platform_payment_onramp: "Ödemek için kripto al",
 };

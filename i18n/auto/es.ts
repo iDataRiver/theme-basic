@@ -134,4 +134,5 @@ export default {
   MANUAL: "Servicio manual",
   Payment_fee: "Tarifas de pago",
   LICENSE: "Servicio de licencia",
+  platform_payment_onramp: "Comprar cripto",
 };

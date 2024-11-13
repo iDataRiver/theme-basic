@@ -129,4 +129,5 @@ export default {
   MANUAL: "Ручное обслуживание",
   Payment_fee: "Плата за оплату",
   LICENSE: "Лицензионная служба",
+  platform_payment_onramp: "Купить крипто, чтобы заплатить",
 };

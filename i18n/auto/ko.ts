@@ -126,4 +126,5 @@ export default {
   MANUAL: "수동 서비스",
   Payment_fee: "지불 수수료",
   LICENSE: "라이센스 서비스",
+  platform_payment_onramp: "지불 할 암호를 구입하십시오",
 };

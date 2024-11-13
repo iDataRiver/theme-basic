@@ -79,7 +79,7 @@ export default {
   automatic_delivery: "صفقة تلقائية",
   header_search_order: "أوامر البحث",
   Search_Order: "يبحث",
-  search_order_input_placeholder: "يرجى إدخال معلومات الاتصال أو orderid",
+  search_order_input_placeholder: "الرجاء إدخال معلومات الاتصال أو OrderID",
   txn_order_id: "معرف الطلب",
   Name: "اسم",
   Price: "سعر",
@@ -123,4 +123,5 @@ export default {
   MANUAL: "الخدمة اليدوية",
   Payment_fee: "رسوم الدفع",
   LICENSE: "خدمة الترخيص",
+  platform_payment_onramp: "شراء التشفير للدفع",
 };
