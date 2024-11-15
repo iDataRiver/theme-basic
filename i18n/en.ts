@@ -113,7 +113,6 @@ export default {// En
   platform_payment_wxpay: 'Wechat Pay',
   platform_payment_crypto: 'Crypto Pay',
   platform_payment_hiicash: 'HiiCash Pay',
-  platform_payment_onramp: 'Buy Crypto to Pay',
   Search: 'Search',
   product_name: 'Product Name',
   DIGITAL: 'Digital Product',

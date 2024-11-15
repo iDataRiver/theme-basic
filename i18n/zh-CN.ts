@@ -113,7 +113,6 @@ export default {// 中文
   platform_payment_wxpay: '微信支付',
   platform_payment_crypto: '加密货币支付',
   platform_payment_hiicash: 'HiiCash隐私支付(微信/支付宝)',
-  platform_payment_onramp: '购买加密货币支付',
   Search: '搜索',
   product_name: '商品名称',
   DIGITAL: '数字商品',

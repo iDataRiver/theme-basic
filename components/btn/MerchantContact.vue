@@ -11,13 +11,13 @@ const contactTypes = useContactTypes()
   </button>
   <dialog id="merchantContacts" class="modal">
     <div class="modal-box">
-      <h3 class="text-lg font-bold">{{ $t('Contact_Merchant') }}</h3>
+      <h3 class="text-lg font-bold mb-4">{{ $t('Contact_Merchant') }}</h3>
 
       <div>
         <p v-if="!isNotEmptyObj(contacts)" class="text-xs text-gray-500">
           {{ $t('no_provider_contact_info') }}
         </p>
-        <div v-else class="py-4 flex flex-wrap gap-y-1 gap-x-4" :class="{ 'grid grid-col-1': vertical }">
+        <div v-else class="flex flex-wrap gap-y-1 gap-x-4" :class="{ 'grid grid-col-1': vertical }">
           <template v-for="contactType in contactTypes">
             <p v-if="contacts[contactType.key]" class="text-sm my-1">
               <span class="badge badge-ghost border-0 font-medium mr-1">
