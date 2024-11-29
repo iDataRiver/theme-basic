@@ -47,21 +47,35 @@
 
 ## 部署
 
+### 使用Docker部署
+
+#### 下载镜像
+```
+docker pull idatariver/theme-basic:latest
+```
+
+#### 运行容器, `NUXT_IDATARIVER_MERCHANT_SECRET`需要设置为自己的部署密钥
+```
+docker run --name idatariver -d --restart=always --publish 3000:3000 -e NUXT_IDATARIVER_MERCHANT_SECRET=dp_*** idatariver/theme-basic
+```
+
+### 使用Vercel部署
+
 本项目基于`Nuxt3`开发，可在如`Vercel`这类主流的网站托管平台上直接部署上线。
 
 如果你没有任何部署经验，可选择[快速部署方案](https://docs.idatariver.com/zh/guide/04.10.website.html)。
 
 如果你有一定部署经验，可按如下步骤手动部署:
 
-### 1. 将本项目fork到自己的`Github`账号下
+#### 1. 将本项目fork到自己的`Github`账号下
 
 ![fork本项目](./docs/images/fork.jpg)
 
-### 2. 注册一个[`Vercel账号`](https://vercel.com/)，绑定步骤1的`Github`账号，并授权访问fork的本项目
+#### 2. 注册一个[`Vercel账号`](https://vercel.com/)，绑定步骤1的`Github`账号，并授权访问fork的本项目
 
 `Vercel`账号需要绑定你的手机号，你可以使用我们的[短信接码服务](https://www.idatariver.com/zh-cn/app/sms-helper)来保护自己的隐私。
 
-### 3. 在`Vercel`控制台创建一个新项目，导入步骤2的项目:
+#### 3. 在`Vercel`控制台创建一个新项目，导入步骤2的项目:
 
 在Vercel上创建项目
 ![vercel创建项目](./docs/images/vercel-add-project.jpg)
@@ -74,10 +88,10 @@
 
 开始部署项目，并设置以下的环境变量:
 
-#### `NUXT_IDATARIVER_MERCHANT_SECRET`
+##### `NUXT_IDATARIVER_MERCHANT_SECRET`
 部署密钥，此参数必须填写，可在[`iDataRiver平台`](https://www.idatariver.com/zh-cn)控制台的`商户设置` -> `独立站` 里配置后获取。
 
-#### `NUXT_PUBLIC_API_ENCRYPT_KEY`
+##### `NUXT_PUBLIC_API_ENCRYPT_KEY`
 可选参数，用于自定义API层面的加密签名，从而获得更好的安全保护，可以自行设置其值。
 
 ![vercel部署项目](./docs/images/vercel-deploy.jpg)
@@ -86,7 +100,7 @@
 
 ![vercel项目部署成功](./docs/images/vercel-deploy-ok.jpg)
 
-### 4. 绑定域名
+#### 4. 绑定域名
 
 > 如果你还没有域名，强烈建议使用`iDataRiver`提供的[域名注册服务](https://www.idatariver.com/zh-cn/app/domain)，完全保护你的隐私。
 
@@ -100,7 +114,7 @@
 
 最后，给域名添加对应的DNS解析记录即可。
 
-#### 使用CloudFlare托管域名
+##### 使用CloudFlare托管域名
 
 如果使用[`CloudFlare`](https://www.cloudflare.com/)免费托管域名，则需要如下配置:
 
@@ -112,7 +126,7 @@
 
 ![cloudflare设置为完全端到端加密](./docs/images/cf-ssl.jpg)
 
-### 5. 最后
+#### 5. 最后
 
 至此，你的独立站已成功部署上线。
 

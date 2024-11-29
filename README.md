@@ -45,21 +45,35 @@ For developers, you can read [Merchant Open API](https://docs.idatariver.com/gui
 
 ## Deploy
 
+### Docker
+
+#### Download Image
+```
+docker pull idatariver/theme-basic:latest
+```
+
+#### Run Container, `NUXT_IDATARIVER_MERCHANT_SECRET` is your `deploy secret`
+```
+docker run --name idatariver -d --restart=always --publish 3000:3000 -e NUXT_IDATARIVER_MERCHANT_SECRET=dp_*** idatariver/theme-basic
+```
+
+### Vercel
+
 This project is developed based on `Nuxt3` and can be directly deployed on platforms such as `Vercel`.
 
 If you have no deployment experience, you can choose [Quick Deployment Solution](https://docs.idatariver.com/guide/04.10.website.html).
 
 If you have some deployment experience, you can manually deploy it according to the following steps:
 
-### 1. Fork this project to your own `Github` account
+#### 1. Fork this project to your own `Github` account
 
 ![fork this project](./docs/images/fork.jpg)
 
-### 2. Register a [`Vercel account`](https://vercel.com/), bind the `Github` account in step 1, and authorize access to the forked project
+#### 2. Register a [`Vercel account`](https://vercel.com/), bind the `Github` account in step 1, and authorize access to the forked project
 
 The `Vercel` account needs to be bound to your mobile phone number. You can use our [SMS Service](https://www.idatariver.com/app/sms-helper) to protect your privacy.
 
-### 3. Create a new project in the Vercel console and import the project from step 2:
+#### 3. Create a new project in the Vercel console and import the project from step 2:
 
 Create a project on Vercel
 ![vercel create project](./docs/images/vercel-add-project.jpg)
@@ -72,10 +86,10 @@ Import the project to be deployed
 
 Start deploying the project and set the following environment variables:
 
-#### `NUXT_IDATARIVER_MERCHANT_SECRET`
+##### `NUXT_IDATARIVER_MERCHANT_SECRET`
 Deployment secret, this parameter must be filled in, which can be obtained after configuration in `Merchant Settings` -> `Website` of the [`iDataRiver Console`](https://www.idatariver.com/console/merchant/settings).
 
-#### `NUXT_PUBLIC_API_ENCRYPT_KEY`
+##### `NUXT_PUBLIC_API_ENCRYPT_KEY`
 Optional parameter, used to customize the encryption signature at the API level to obtain better security protection, and its value can be set by yourself.
 
 ![vercel deployment project](./docs/images/vercel-deploy.jpg)
@@ -84,7 +98,7 @@ After setting the above environment variables, click `Deploy` to deploy, and wai
 
 ![vercel project deployed successfully](./docs/images/vercel-deploy-ok.jpg)
 
-### 4. Bind domain name
+#### 4. Bind domain name
 
 > If you don't have a domain name yet, it is strongly recommended to use the [Simple Domain Name service](https://www.idatariver.com/app/domain) provided by `iDataRiver` to fully protect your privacy.
 
@@ -98,7 +112,7 @@ Add your domain name:
 
 Finally, add the corresponding DNS records to the domain name.
 
-#### Use CloudFlare to host your domain
+##### Use CloudFlare to host your domain
 
 You can use [`CloudFlare`](https://www.cloudflare.com/) to host your domain for free, you need to configure it as follows:
 
@@ -111,7 +125,7 @@ Set the domain's `SSL/TLS` to `full` end-to-end encryption
 ![cloudflare is set to full end-to-end encryption](./docs/images/cf-ssl.jpg)
 
 
-### 5. Finally
+#### 5. Finally
 Now, your website has been successfully deployed and launched.
 
 If you need to upgrade to the latest version after a period of time, there are two ways:
