@@ -1,9 +1,11 @@
 <script setup>
-const props = defineProps(['intro'])
+const props = defineProps(['intro', 'siteSettings'])
 const intro = props.intro
+const siteSettings = props.siteSettings
 
 onMounted(() => {
-  if (intro) {
+  const inform = siteSettings.inform || {}
+  if (intro && inform.popup != 'never') {
     merchantNotice.showModal()
   }
 });

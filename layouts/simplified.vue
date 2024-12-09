@@ -5,11 +5,16 @@ const { locale } = useI18n()
 const localePath = useLocalePath()
 const basicInfo = await stateMerchant.basic(true)
 const themeId = basicInfo.website ? basicInfo.website.theme : '1'
-const scripts = basicInfo.website.script
+const scripts = basicInfo.website ? basicInfo.website.script : ''
 </script>
 
 <template>
-  <NuxtLayout name="default">
+  <NuxtLayout v-if="!isNotEmptyObj(basicInfo)" name="default">
+    <p class="mt-40 text-xl font-medium flex items-center justify-center">
+      Missing NUXT_IDATARIVER_MERCHANT_SECRET 😉
+    </p>
+  </NuxtLayout>
+  <NuxtLayout v-else name="default">
     <div class="fixed top-0 z-50 w-full flex items-center justify-center bg-white">
       <div class="w-full bg-white px-4"
         :class="{ 'max-w-screen-xl': themeId == '1', 'max-w-screen-lg': themeId == '2' }">

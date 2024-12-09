@@ -13,7 +13,7 @@ const filterSkus = (projects, keyword = '') => {
   const showSkus = []
 
   projects.forEach((project) => {
-    if (!['DIGITAL', 'MANUAL', 'LICENSE', 'GROUP'].includes(project.type)) {
+    if (!['DIGITAL', 'MANUAL', 'LICENSE', 'GROUP', 'VPN'].includes(project.type)) {
       return
     }
 
@@ -91,7 +91,7 @@ onMounted(() => {
 
       <div class="mt-4 flex items-center">
         <div>
-          <BtnMerchantIntro :intro="descI18n(locale, merchant)" />
+          <BtnMerchantIntro :intro="descI18n(locale, merchant)" :siteSettings="siteSettings" />
         </div>
 
         <div class="flex-grow" />
