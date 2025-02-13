@@ -133,4 +133,5 @@ export default {
   Payment_fee: "Frais de paiement",
   LICENSE: "Service de licence",
   platform_payment_onramp: "Acheter de la crypto à payer",
+  USD: "USD",
 };

@@ -127,4 +127,5 @@ export default {
   Payment_fee: "Opłaty za płatność",
   LICENSE: "Usługa licencyjna",
   platform_payment_onramp: "Kup krypto, aby zapłacić",
+  USD: "USD",
 };

@@ -132,4 +132,5 @@ export default {
   Payment_fee: "To'lov to'lovlari",
   LICENSE: "Litsenziya xizmati",
   platform_payment_onramp: "To'lash uchun kripto sotib oling",
+  USD: "USD",
 };

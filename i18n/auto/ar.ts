@@ -124,4 +124,5 @@ export default {
   Payment_fee: "رسوم الدفع",
   LICENSE: "خدمة الترخيص",
   platform_payment_onramp: "شراء التشفير للدفع",
+  USD: "دولار أمريكي",
 };

@@ -120,4 +120,5 @@ export default {// En
   MANUAL: 'Manual Service',
   Payment_fee: 'Payment fees',
   LICENSE: 'LICENSE Service',
+  USD: 'USD',
 }

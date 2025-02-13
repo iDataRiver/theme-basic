@@ -120,4 +120,5 @@ export default {// 中文
   MANUAL: '人工交付',
   Payment_fee: '支付通道费',
   LICENSE: '授权码',
+  USD: '美元',
 }

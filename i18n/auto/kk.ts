@@ -128,4 +128,5 @@ export default {
   Payment_fee: "Төлемақы төлемі",
   LICENSE: "Лицензиялық қызмет",
   platform_payment_onramp: "Төлеу үшін крипто сатып алыңыз",
+  USD: "АҚШ доллары",
 };

@@ -84,17 +84,17 @@ if (payStatus.value === 'WAIT') {
           </div>
           <div class="grid grid-cols-4 sm:grid-cols-5 mt-1 text-md font-medium">
             <div class="col-span-2 font-medium">{{ $t('order_ori_price') }}</div>
-            <div class="col-span-2 flex justify-end font-bold"> {{ order.oriPrice }} USD</div>
+            <div class="col-span-2 flex justify-end font-bold"> {{ order.oriPrice }} {{ $t('USD') }}</div>
           </div>
           <div v-if="order.coupon !== ''" class="grid grid-cols-4 sm:grid-cols-5 mt-1 text-md font-medium">
             <div class="col-span-2 font-medium">{{ $t('order_coupon') }}</div>
             <div class="col-span-2 flex justify-end font-bold">
-              {{ Math.round((order.price - order.oriPrice) * 100000) / 100000 }} USD
+              {{ Math.round((order.price - order.oriPrice) * 100000) / 100000 }} {{ $t('USD') }}
             </div>
           </div>
           <div class="grid grid-cols-4 sm:grid-cols-5 mt-1 text-md font-medium">
             <div class="col-span-2 font-medium">{{ $t('order_pay_price') }}</div>
-            <div class="col-span-2 flex justify-end font-bold"> {{ order.price }} USD</div>
+            <div class="col-span-2 flex justify-end font-bold"> {{ order.price }} {{ $t('USD') }}</div>
           </div>
         </div>
 

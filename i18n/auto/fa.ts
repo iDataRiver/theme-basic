@@ -129,4 +129,5 @@ export default {
   Payment_fee: "هزینه پرداخت",
   LICENSE: "سرویس مجوز",
   platform_payment_onramp: "برای پرداخت رمزنگاری بخرید",
+  USD: "دلار",
 };

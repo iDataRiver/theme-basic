@@ -130,4 +130,5 @@ export default {
   Payment_fee: "Платіжні збори",
   LICENSE: "Служба ліцензії",
   platform_payment_onramp: "Купуйте криптовалюту, щоб заплатити",
+  USD: "Долар",
 };

@@ -128,4 +128,5 @@ export default {
   Payment_fee: "支払い料",
   LICENSE: "ライセンスサービス",
   platform_payment_onramp: "支払いのために暗号を購入します",
+  USD: "米ドル",
 };

@@ -135,4 +135,5 @@ export default {
   Payment_fee: "Zahlungsgebühren",
   LICENSE: "Lizenzservice",
   platform_payment_onramp: "Kaufen Sie Krypto, um zu bezahlen",
+  USD: "USD",
 };
