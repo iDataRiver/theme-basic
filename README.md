@@ -4,8 +4,6 @@ En [中文](./README_CN.md)
 
 <h1 align="center">iDataRiver Theme(Basic)</h1>
 
-[<img src="https://api.gitsponsors.com/api/badge/img?id=822001995" height="60">](https://api.gitsponsors.com/api/badge/link?p=QwV5s+4MDVlV30cpxD/KSRF3NDuB+nfw0tw5REI1Lkmpg/oMTEw1tw7wGNeyIpFLMYXsVPUOYjk3ysVbhX9HYYymBpihkwQ3SBm9SQ6qwwPaFGfZNBVtGwHWVQCV946QGQzTaOz3nlneN5/OVsqQdQ==)
-
 This project is an open-source independent website project by [`iDataRiver`](https://www.idatariver.com).
 
 For project/product management, please go to `iDataRiver` `Console` -> `Project Management`.
